@@ -1,1 +1,94 @@
-hello guys
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Dmar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo-title">
+      <img src="IMG_21.png" alt="Logo" class="logo">
+      <h1>Dameng</h1>
+    </div>
+    <div class="menu">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <div class="dropdown">
+        <a href="#">Beranda</a>
+        <a href="#about">Nyong</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+    </div>
+  </header>  
+
+  <main>
+    <section id="home" class="konten">
+      <h2>Beranda</h2>
+      <p>Wong lio ngerti opo.</p>
+    </section>
+    
+    <section class="konten">
+      <article>
+        <h2>Cerita 1: Trek</h2>
+        <p>
+          "sing salah dudu atimu tapi
+          <span class="lanjutan" style="display: none;">raimu"</span>
+        </p>
+        <button class="tombolLanjut">Lanjutkan</button>
+      </article>
+
+      <article>
+        <h2>Cerita 2: Heker</h2>
+        <p>
+          nyong disangka heker padahal intel
+          <span class="lanjutan" style="display: none;">sing arep nangkap gavin</span>
+        </p>
+        <button class="tombolLanjut">Lanjutkan</button>
+      </article>
+      
+            <article>
+        <h2>Cerita 3: Tong</h2>
+        <p>
+          jangan berteman dengan orang seperti tong,karena
+          <span class="lanjutan" style="display: none;">"Tong kosong nyaring bunyinya" orang yang banyak omong itu otaknya kosong,gak ada isinya anjing itu orang tolol soalnya gua dulu punya temen kaya gitu sok alim padahal aslinya kek anjing sering ceramah yang aslinya tuh ya gak ada makna nya kalo dia yang ceramah anjing,dia juga orangnya kalo main NGGAK PERNAH BAWA UANG sekali lagi GAK PERNAH BAWA UANG emang bocah anjing maunya yang gratisan bego bet untung dia baperan dan ya bener,baperan akhirnya dia playing victim dan udah pergi dari tongkrongan gua akhirnya tongkrongan gua aman dari bocah toxic yang mau duitnya aja.</span>
+        </p>
+        <button class="tombolLanjut">Lanjutkan</button>
+      </article>
+      
+    </section>
+  </main>
+<footer>
+  <div class="konten-footer">
+    <section id="about" class="konten">
+      <h2>Nyong</h2>
+      <p>nyong Damar,ws sering de lomboni bocah,arep lanang apa wadon,tua apa seumuran,pada kaya celek kabeh. </p>
+    </section>
+    
+    <section id="kontak" class="konten">
+      <h2>Kontak</h2>
+      <p>ko bisa dm nyong tung IG @Damarrstn apa email maring Setiaberawan@gmail.com,nek pengin wa dm bae ngko tek nei nomere.</p>
+    </section>
+
+    <p class="copyright">&copy; 2025 Blog Mar.</p>
+  </div>
+</footer>
+
+
+  <script>
+    const tombolLanjut = document.querySelectorAll(".tombolLanjut");
+    const lanjutanTeks = document.querySelectorAll(".lanjutan");
+
+    tombolLanjut.forEach((btn, index) => {
+      btn.addEventListener("click", function () {
+        lanjutanTeks[index].style.display = "inline";
+        this.style.display = "none";
+      });
+    });
+  </script>
+</body>
+</html>
